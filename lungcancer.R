@@ -99,8 +99,6 @@ if (require("plumber")) {
                    repos = "https://cloud.r-project.org")
 }
 
-
-
 # Read the dataset with spaces in column names
 lung_cancer <- read_csv("data/survey lung cancer.csv",
                         
@@ -198,7 +196,8 @@ print(predictions_to_be_predicted)
 
 #Predict using a function
 predict_lungcancer <-
-  function(arg_gender,
+  function(
+           arg_gender,
            arg_age,
            arg_smoking,
            arg_yellowfingers, 
@@ -212,7 +211,8 @@ predict_lungcancer <-
            arg_coughing,
            arg_breath,
            arg_swallowing,
-           arg_chestpain ) {
+           arg_chestpain 
+           ) {
     # Create a data frame using the arguments
     to_be_predicted <-
       data.frame(
@@ -247,3 +247,13 @@ predict_lungcancer <-
 
 
 predict_lungcancer('F',32,1,2,2,1,1,2,1,2,1,1,2,1,2)
+
+
+
+
+
+
+
+
+
+
