@@ -1,4 +1,4 @@
-<h1>BI2-134985-Lung Cancer Prediction</h1>
+<h1>BI2-134985-Lung Cancer Prediction using R and PHP for the frontend</h1>
 <p>This is a classification model utilizing the KNN algorithm</p>
 <h2>Home page </h2>
 
