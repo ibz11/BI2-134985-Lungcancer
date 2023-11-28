@@ -121,7 +121,7 @@ lung_cancer <- read_csv("data/survey lung cancer.csv",
                           LUNG_CANCER = col_factor(levels = c("YES", "NO"))
                         ))
 
-
+data(lung_cancer)
 # Split the dataset
 set.seed(7)
 train_index <- createDataPartition(lung_cancer$LUNG_CANCER, p = 0.8, list = FALSE)
